@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Poorva Bhutkar • Portfolio</title>
+  <meta name="description" content="Portfolio website for Poorva Bhutkar — IT Graduate, UX/UI enthusiast, Front-end Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Poorva<span class="accent">.</span></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero reveal fade-zoom">
+    <div class="container hero-inner">
+      <div>
+        
+        <h1 class="gradient-text">Poorva Bhutkar</h1>
+        <span class="pill"> </span>
+        <p ><h3><i><span id="animated-text"> IT Graduate</span></i></h3></p>
+        <p class="sub">I am an IT graduate with a strong foundation in design and technology. Skilled in Figma, Photoshop, and front-end development with a keen interest in user psychology.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <img src="1000051445-removebg.png" class="art" alt="Poorva Bhutkar">
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT -->
+    <section id="about" class="reveal hover-card">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>Ambitious individual and a team player with a core interest in technical development. Seeking a full-time role in a fast-growing organization to apply creativity and technical skills.</p>
+        <div class="grid-edu">
+          <div class="edu"><strong>B.Sc. IT</strong><br>D G Ruparel College<br>7.7 CGPA • 2024</div>
+          <div class="edu"><strong>HSC</strong><br>Sathaye College, Vile Parle<br>75% • 2021</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"><span>Photoshop</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="UX/UI"><span>UX/UI</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Version Control</span></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="reveal hover-card">
+      <h2>Experience</h2>
+      <div class="xp-list">
+        <div class="card">
+          <strong>Banking Operations</strong> — Apr 2025 – Present
+          <ul>
+            <li>Handled daily banking operations ensuring compliance and efficiency.</li>
+            <li>Maintained data accuracy and collaborated with cross-functional teams.</li>
+            <li>Focused on process optimization and customer satisfaction.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal fade-zoom hover-card">
+      <h2>Projects</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="project-thumb"><span>Medicine B2C App</span></div>
+          <p class="sub">Built a B2C app where users can order medicines and set reminders based on prescriptions, with notifications for timely intake.</p>
+          <div class="tags"><span class="tag">UI/UX</span><span class="tag">IT</span></div>
+          <a href="#" class="btn btn-primary">View Project Code</a>
+        </article>
+        <article class="card">
+          <div class="project-thumb"><span>E-Commerce Platform</span></div>
+          <p class="sub">Developed a responsive e-commerce website with user authentication, product catalog, and secure payment integration.</p>
+          <div class="tags"><span class="tag">Web Dev</span><span class="tag">JavaScript</span></div>
+          <a href="#" class="btn btn-primary">View Project Code</a>
+        </article>
+        <article class="card">
+          <div class="project-thumb"><span>Portfolio Website</span></div>
+          <p class="sub">Created a personal portfolio website showcasing projects, skills, and experience with modern design and animations.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          <a href="#" class="btn btn-primary">View Project Code</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal contact">
+      <h2>Contact</h2>
+      <p>Let’s build something together.</p>
+      <div class="contact-form">
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <p class="sub">📞 9372848760 • 📍 Khar, Mumbai</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Poorva Bhutkar</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
