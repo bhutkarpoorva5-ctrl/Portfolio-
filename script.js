@@ -1,6 +1,36 @@
 // Update footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Mobile Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Toggle menu on hamburger click
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+});
+
+// Close menu when clicking on a nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
 // Reveal on scroll with fade and slide animations
 const revealElements = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries, obs) => {
