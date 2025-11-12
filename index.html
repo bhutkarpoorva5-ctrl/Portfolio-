@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -114,19 +115,39 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="reveal contact">
-      <h2>Contact</h2>
-      <p>Let’s build something together.</p>
-      <div class="contact-form">
+    <section class="contact" id="contact">
+
+      <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+      <div class="container">
+
         <form id="contact-form">
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+            <textarea placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+            </div>
+            </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
         </form>
       </div>
-      <p class="sub">📞 9372848760 • 📍 Khar, Mumbai</p>
+      </div>
     </section>
   </main>
 
