@@ -54,24 +54,17 @@ function typeWriter() {
 typeWriter();
 
 // EMAILJS Integration
-(function() {
-  emailjs.init("Szzd0Btz3bP7mxZNl"); // Replace with your EmailJS Public Key
-})();
+$("#contact-form").submit(function (event) {
+    emailjs.init("Szzd0Btz3bP7mxZNl");
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  emailjs.send("service_6itsebc", "template_v76go2a", {
-    from_name: document.getElementById("name").value,
-    from_email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value
-  })
-  .then(() => {
-    alert("Message sent successfully!");
-    document.getElementById("contact-form").reset();
-  }, (error) => {
-    alert("Failed to send message. Please try again later.");
-    console.error(error);
-  });
+    emailjs.sendForm('Poorva_mail123', 'template_v76go2a', '#contact-form')
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("contact-form").reset();
+            alert("Form Submitted Successfully");
+        }, function (error) {
+            console.log('FAILED...', error);
+            alert("Form Submission Failed! Try Again");
+        });
+    event.preventDefault();
 });
