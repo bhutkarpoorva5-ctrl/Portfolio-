@@ -55,7 +55,7 @@ typeWriter();
 
 // EMAILJS Integration
 (function() {
-  emailjs.init("YLoBA_tRSGlo74E_at"); // Replace with your EmailJS Public Key
+  emailjs.init("LoBA_tRSGlo74E_at"); // Replace with your EmailJS Public Key
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(event) {
