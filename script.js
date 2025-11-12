@@ -61,7 +61,7 @@ typeWriter();
 document.getElementById("contact-form").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  emailjs.send("service_6itsebc", "template_6x98bfq", {
+  emailjs.send("service_6itsebc", "template_v76go2a", {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
